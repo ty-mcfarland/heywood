@@ -1,3 +1,7 @@
+general:
+  branches:
+    only:
+      - master
 machine:
   node:
     version: 10.0.0
@@ -10,3 +14,7 @@ test:
   post:
     - mkdir $CIRCLE_ARTIFACTS/dist
     - mv dist/*.* $CIRCLE_ARTIFACTS/dist
+deployment:
+  production:
+    commands:
+      -./deploy_prod.sh
