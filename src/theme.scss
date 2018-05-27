@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$heywood-primary: mat-palette($mat-orange, 700);
+$heywood-accent: mat-palette($mat-blue, 800);
+$heywood-warn: mat-palette($mat-red);
+
+$mat-heywood-theme: mat-light-theme($heywood-primary, $heywood-accent, $heywood-warn);
+
+@include angular-material-theme($mat-heywood-theme);

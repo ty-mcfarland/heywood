@@ -1,0 +1,23 @@
+.background-container {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 13;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    .profile-section {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 13;
+
+        mat-card-content {
+            text-align: left;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    }
+}
