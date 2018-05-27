@@ -6,3 +6,7 @@ before_install:
 compile:
   override:
     - "npm run build"
+test:
+  post:
+    - mkdir $CIRCLE_ARTIFACTS/dist
+    - mv dist/*.* $CIRCLE_ARTIFACTS/dist
