@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BackgroundComponent } from './background.component';
+import { MatCardModule } from '@angular/material/card';
 
 describe('BackgroundComponent', () => {
   let component: BackgroundComponent;
@@ -8,7 +9,10 @@ describe('BackgroundComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BackgroundComponent ]
+      declarations: [ BackgroundComponent ],
+      imports: [
+        MatCardModule
+      ]
     })
     .compileComponents();
   }));
