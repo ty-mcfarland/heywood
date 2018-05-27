@@ -3,3 +3,5 @@ machine:
     version: 10.0.0
 before_install:
   - "npm config set strict-ssl false"
+compile:
+  - "npm run build"
