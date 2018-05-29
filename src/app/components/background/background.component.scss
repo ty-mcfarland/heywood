@@ -13,11 +13,18 @@
         grid-column-end: 13;
         grid-row-start: 1;
         grid-row-end: 13;
+        overflow-y: auto;
 
         mat-card-content {
             text-align: left;
             line-height: 1.5;
             margin-top: 10px;
         }
+    }
+}
+
+@media(max-width: 500px) {
+    .background-container {
+
     }
 }

@@ -13,6 +13,17 @@
           psychiatric hospital in WPB following the completion of his clinical internship at the Veterans
           Affairs Medical Center in Virginia. Here he continued for the next 6 years providing
           neuropsychological evaluations, supervision, and psychotherapy intervention services.
+          <div class="service-card-container">
+            <mat-card class="service-card" *ngFor="let service of services">
+              <div mat-card-avatar>
+                <img src="{{service.imagePath}}"/>
+              </div>
+              <mat-card-title>{{service.title}}</mat-card-title>
+              <mat-card-content class="service-card-content">
+                {{service.description}}
+              </mat-card-content>
+            </mat-card>
+          </div>
       </mat-card-content>
     </mat-card>
   </div>

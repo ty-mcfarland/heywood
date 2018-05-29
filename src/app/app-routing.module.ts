@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { HomeComponent } from './components/home/home.component';
+import { LocationComponent } from './components/location/location.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path: 'background',
     component: BackgroundComponent
   },
+  // {
+  //   path: 'location',
+  //   component: LocationComponent
+  // },
   {
     path: '**',
     redirectTo: 'home',

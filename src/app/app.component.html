@@ -2,6 +2,10 @@
 <div class="content-container">
   <mat-card class="profile-pic">
       <div class="picture z-depth-1"></div>
+      <div class="address">
+        Address goes here
+        Phone number goes here
+      </div>
       <mat-card-content>
           <a mat-button [routerLink]="section.link" [disabled]="section.disabled" routerLinkActive="active-tab" *ngFor="let section of sections">{{section.description}}</a>
       </mat-card-content>

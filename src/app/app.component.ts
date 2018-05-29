@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     },
     {
       description: 'Location',
-      link: '/contact',
+      link: '/404',
       show: false,
       disabled: true
     }

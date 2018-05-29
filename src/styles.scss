@@ -47,13 +47,14 @@ body {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(12, 1fr);
-      grid-column-start: 3;
-      grid-column-end: 11;
+      grid-column-start: 2;
+      grid-column-end: 12;
       grid-row-start: 2;
       grid-row-end: 13;
   }
   app-home,
   app-background,
+  app-location,
   app-about {
     grid-column-start: 1;
     grid-column-end: 13;
@@ -63,4 +64,16 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+  }
+
+  @media(max-width: 500px) {
+      body {
+          grid-template-columns: 1fr;
+      }
+      app-root {
+          grid-template-columns: 1fr;
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row-start: 1;
+      }
   }
